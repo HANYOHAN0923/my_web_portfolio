@@ -8,7 +8,8 @@ function SendMail(event) {
   emailjs
     .send("service_m66258g", "template_z4hcif4", params)
     .then(function (res) {
-      console.log("Success! " + res.status);
+      alert("Thanks for your Attention!");
+      location.reload();
     });
 }
 
