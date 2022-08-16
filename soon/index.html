@@ -98,7 +98,32 @@
                       >Dev Blog</a
                     >
                   </h2>
-                  <div class="simply-countdown simply-countdown-one"></div>
+                  <div class="simply-countdown simply-countdown-one">
+                    <div class="simply-section simply-days-section">
+                      <div class="days-span">
+                        <span class="simply-amount">00</span
+                        ><span class="simply-word">days</span>
+                      </div>
+                    </div>
+                    <div class="simply-section simply-hours-section">
+                      <div class="hours-span">
+                        <span class="simply-amount">00</span
+                        ><span class="simply-word">hours</span>
+                      </div>
+                    </div>
+                    <div class="simply-section simply-minutes-section">
+                      <div class="minutes-span">
+                        <span class="simply-amount">00</span
+                        ><span class="simply-word">minutes</span>
+                      </div>
+                    </div>
+                    <div class="simply-section simply-seconds-section">
+                      <div class="seconds-span">
+                        <span class="simply-amount">00</span
+                        ><span class="simply-word">seconds</span>
+                      </div>
+                    </div>
+                  </div>
                   <div class="row">
                     <div class="col-md-12 desc">
                       <h2>
@@ -144,7 +169,7 @@
                         <li>
                           <a
                             href="https://httpsjohnhan0923tistorycom.notion.site/c970e60873a3469d8e819e11c2d4710d?v=a2d485d94ab543c39fddcd01fac9e006"
-                            ><i class="icon-progress-empty"></i
+                            ><i class="icon-progress-one"></i
                           ></a>
                         </li>
                         <li>
@@ -189,24 +214,5 @@
     <script src="./js/simplyCountdown.js"></script>
     <!-- Main -->
     <script src="./js/main.js"></script>
-
-    <script>
-      var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
-
-      // default example
-      simplyCountdown(".simply-countdown-one", {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-      });
-
-      //jQuery example
-      $("#simply-countdown-losange").simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false,
-      });
-    </script>
   </body>
 </html>

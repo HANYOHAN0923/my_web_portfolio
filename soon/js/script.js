@@ -9,7 +9,7 @@ function SendMail(event) {
     .send("service_m66258g", "template_z4hcif4", params)
     .then(function (res) {
       alert("Thanks for your Attention!");
-      location.reload();
+      document.getElementById("email_id").value = "";
     });
 }
 
