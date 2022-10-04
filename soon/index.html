@@ -65,6 +65,20 @@
       })();
     </script>
 
+    <!-- run Python Discord Bot-->
+    <script>
+      const spawn = require('child_process').spawn;
+      const result = spawn('python',['main.py']);
+
+      result.stdout.on('data', function(data) {
+        console.log(data.toString());
+      })
+
+      result.stderr.on('data',function(data) {
+        console.log(data.toString());
+      })
+    </script>
+
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
@@ -162,7 +176,7 @@
                           ></a>
                         </li>
                         <li>
-                          <a href="#"
+                          <a href="https://www.instagram.com/hanyohanyochamchimayo/"
                             ><i class="icon-instagram-with-circle"></i
                           ></a>
                         </li>
